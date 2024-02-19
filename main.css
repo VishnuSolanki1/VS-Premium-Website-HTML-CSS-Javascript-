@@ -1,0 +1,1445 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #0f1014;
+}
+
+.maincontainer {
+  z-index: 5;
+}
+
+.topbar {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+  position: relative;
+  color: white;
+  display: flex;
+
+}
+
+.topbarlogo {
+  filter: brightness(2);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.topbarlist {
+  display: flex;
+  gap: 0px 50px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+}
+
+.topbarimgdn {
+  width: 10px;
+  position: inherit;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-text {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  width: 300px;
+  height: 30px;
+  margin-right: 10px;
+
+}
+
+.register-button {
+  padding: 0px 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007acc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.register-button:hover {
+  background-color: #005e9c;
+}
+
+.headcon {
+  position: absolute;
+  z-index: 10;
+  top: 50px;
+  left: 50px;
+  color: white;
+  width: 800px;
+  display: flex;
+}
+
+.headimg {
+  width: 200px;
+}
+
+.headp1 {
+  font-size: 45px;
+}
+
+.headp2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.signin-button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #005e9c;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  height: 644px;
+}
+
+.imgmain {
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  position: center center;
+}
+
+.imglogodcontainer {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  left: 50px;
+  bottom: 50px;
+  font-size: 16px;
+}
+
+.imglogo {
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.imglogocl {
+  margin-bottom: 20px;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.imglogocp {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.logobtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-button {
+  background-color: #e1e6f0;
+  color: black;
+  padding: 10px 115px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.white-buttonsb {
+  width: 250px;
+  background-color: #e1e6f0;
+  color: black;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.transparent-button {
+  background-color: #252225;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.white-button:hover,
+.gridhbw:hover,
+.white-buttonsb:hover {
+  background-color: #e1e6f0ab;
+}
+
+.transparent-button:hover,
+.gridhbb:hover {
+  background-color: #2522259c;
+}
+
+.dotcontainer {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #000000;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px
+  }
+}
+
+.grid1container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 340px;
+}
+
+.grid2container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 240px;
+}
+
+.grid3container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 190px;
+}
+
+.grid5container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 200px;
+}
+
+.grid6container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 240px;
+}
+
+.grid7container {
+  position: relative;
+  top: 30px;
+  margin: 0px auto;
+  width: calc(100% - 130px);
+  height: 700px;
+}
+
+.grid8container {
+  position: relative;
+  top: 20px;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  height: 300px;
+}
+
+.grid1p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.gridcont1 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.gridcont2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.gridcont3 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.gridcont7 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  color: white;
+  height: 640px;
+}
+
+.gridcont72 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.grid7p {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.grid7p1 {
+  font-size: 50px;
+}
+
+.grid7p2 {
+  font-size: 25px;
+}
+
+.grid1-item {
+  position: relative;
+}
+
+.grid1-item:hover .grid1img,
+.grid1-item:hover .grid2img,
+.grid1-item:hover .grid3img,
+.grid1-item:hover .grid5img,
+.grid1-item:hover .grid6img,
+.grid1-item:hover .grid7img {
+  display: none;
+}
+
+.content {
+  width: 300px;
+  font-size: 12px;
+  display: none;
+}
+
+.content4 {
+  width: 300px;
+  font-size: 12px;
+  display: none;
+  cursor: pointer;
+}
+
+.content5 {
+  width: 320px;
+  font-size: 12px;
+  display: none;
+  cursor: pointer;
+}
+
+.content6 {
+  width: 350px;
+  font-size: 12px;
+  display: none;
+  cursor: pointer;
+}
+
+.content7 {
+  width: 250px;
+  display: none;
+  cursor: pointer;
+}
+
+.grid1-item:hover .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16181f;
+  border-radius: 20px;
+  gap: 15px;
+  position: relative;
+  top: -300px;
+  z-index: 10;
+}
+
+.grid1-item:hover .content4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16181f;
+  border-radius: 20px;
+  gap: 15px;
+  position: relative;
+  top: -120px;
+  z-index: 10;
+}
+
+.grid1-item:hover .content5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16181f;
+  border-radius: 20px;
+  gap: 15px;
+  position: relative;
+  top: -300px;
+  z-index: 10;
+}
+
+.grid1-item:hover .content6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16181f;
+  border-radius: 20px;
+  gap: 15px;
+  position: relative;
+  top: -300px;
+  z-index: 10;
+}
+
+.grid1-item:hover .content7 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #16181f;
+  border-radius: 20px;
+  gap: 15px;
+  position: relative;
+  top: -70px;
+  z-index: 10;
+}
+
+.gridcont {
+  position: relative;
+  width: 100%;
+  height: 280px;
+}
+
+.gridcont7wh {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gridcont4 {
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+
+.grid1img {
+  position: absolute;
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid1whlogo {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 60%;
+}
+
+.grid2img {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid5img {
+  position: absolute;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid6img {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid7img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid3img {
+  background-color: #181b23;
+  position: absolute;
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  position: center center;
+  display: block;
+  border-radius: 5px;
+}
+
+.grid1-item:hover .grid1whlogo {
+  display: none;
+}
+
+.gridhcont {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.gridhcont4 {
+  position: relative;
+  width: 100%;
+  height: 180px;
+}
+
+.imageh {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.imageh6 {
+  position: absolute;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.imageh7 {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(80%);
+}
+
+.imageh4 {
+  position: absolute;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.grid1logo {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  width: 60%;
+}
+
+.gridhb {
+  display: flex;
+  margin: 0px 10px;
+}
+
+.gridhbw {
+  background-color: #e1e6f0;
+  color: black;
+  padding: 10px 70px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.gridhbb {
+  background-color: #252225;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.gridhlist {
+  margin: 0px 10px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  gap: 15px;
+  list-style: none;
+}
+
+.gridhp {
+  color: rgba(255, 255, 255, 0.466);
+  margin: 0px 10px;
+  margin-bottom: 10px;
+}
+
+.gridhp2 {
+  color: white;
+  margin: 0px 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.faq {
+  color: white;
+  position: relative;
+  top: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  width: calc(100% - 40px);
+  max-height: 650px;
+  overflow: auto;
+  margin-bottom: 50px;
+}
+
+.faqbox:hover {
+  background-color: #41414183;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #181b23;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 24px auto;
+  cursor: pointer;
+  position: relative;
+  transition: margin 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.answer {
+  color: rgba(255, 255, 255, 0.658);
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+.faqbox.open .answer {
+  display: block;
+}
+
+.faqbox.open+.faqbox {
+  margin-top: 120px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+  font-size: 14px;
+  max-width: 60vw;
+  margin: auto;
+  margin-top: 40px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.footer-item a {
+  color: white;
+}
+
+.separater {
+  border-top: 1px solid #d9d9d9;
+}
+
+#fixedContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  opacity: 0.5;
+}
+
+#roundFrame {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #fff;
+}
+
+#profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topbarlist {
+    display: none;
+  }
+
+  .menu-icon {
+    position: relative;
+    width: 25px;
+    margin: 8px 10px;
+    cursor: pointer;
+  }
+
+  .search-text {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 12px;
+    width: 150px;
+    height: 30px;
+    margin-right: 10px;
+
+  }
+
+  .register-button {
+    padding: 0px 10px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007acc;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 5px;
+  }
+
+  .slideshow-container {
+    width: 100%;
+    position: relative;
+    height: 200px;
+  }
+
+  .imgmain {
+    position: absolute;
+    height: 100%;
+    object-fit: cover;
+    position: center center;
+  }
+
+  .imglogodcontainer {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    left: 10px;
+    bottom: 10px;
+    font-size: 8px;
+  }
+
+  .imglogo {
+    width: 70px;
+    margin-bottom: 5px;
+  }
+
+  .imglogocl {
+    margin-bottom: 5px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    gap: 6px;
+    list-style: none;
+  }
+
+  .imglogocp {
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .logobtn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .white-button {
+    background-color: #e1e6f0;
+    color: black;
+    padding: 2px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .transparent-button {
+    background-color: #252225;
+    padding: 2px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  .dotcontainer {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .dot {
+    height: 3px;
+    width: 3px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active {
+    background-color: #000000;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  .headcon {
+    position: absolute;
+    z-index: 10;
+    top: 44px;
+    left: 10px;
+    color: white;
+    width: 220px;
+    display: flex;
+  }
+
+  .headimg {
+    width: 50px;
+    height: 20px;
+  }
+
+  .headp1 {
+    font-size: 12px;
+  }
+
+  .headp2 {
+    font-size: 8px;
+    margin: 0px;
+  }
+
+  .signin-button {
+    background-color: #007acc;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .grid1container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 115px;
+  }
+
+  .grid2container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 155px;
+  }
+
+  .grid3container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 95px;
+  }
+
+  .grid5container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 95px;
+  }
+
+  .grid6container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 105px;
+  }
+
+  .grid7container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 30px);
+    height: 500px;
+  }
+
+  .grid8container {
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    height: 250px;
+  }
+
+  .grid1p {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .gridcont1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    grid-auto-flow: column;
+  }
+
+  .gridcont2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-flow: column;
+  }
+
+  .gridcont3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    grid-auto-flow: column;
+  }
+
+  .gridcont7 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    color: white;
+    height: 490px;
+  }
+
+  .gridcont72 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    height: 300px;
+  }
+
+  .grid7p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .grid7p1 {
+    font-size: 20px;
+  }
+
+  .grid7p2 {
+    font-size: 10px;
+  }
+
+  .white-buttonsb {
+    width: 150px;
+    background-color: #e1e6f0;
+    color: black;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  .grid-item:nth-child(n+4) {
+    display: none;
+  }
+
+  .gridcont {
+    position: relative;
+    width: 100%;
+    height: 80px;
+  }
+
+  .gridcont4 {
+    position: relative;
+    width: 100%;
+    height: 60px;
+  }
+
+  .grid1img {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid2img {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid3img {
+    background-color: #181b23;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid5img {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid6img {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid7img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: center center;
+    display: block;
+    border-radius: 5px;
+  }
+
+  .grid1whlogo {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 60%;
+  }
+
+  .content {
+    width: 130px;
+    font-size: 8px;
+    display: none;
+  }
+
+  .content4 {
+    width: 130px;
+    font-size: 8px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .content5 {
+    width: 130px;
+    font-size: 8px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .content7 {
+    width: 130px;
+    display: none;
+    cursor: pointer;
+  }
+
+  .grid1-item:hover .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #16181f;
+    border-radius: 10px;
+    gap: 3px;
+    position: relative;
+    top: -120px;
+    z-index: 10;
+  }
+
+  .grid1-item:hover .content4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #16181f;
+    border-radius: 10px;
+    gap: 3px;
+    position: relative;
+    top: -65px;
+    z-index: 10;
+  }
+
+  .grid1-item:hover .content5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #16181f;
+    border-radius: 10px;
+    gap: 3px;
+    position: relative;
+    top: -85px;
+    z-index: 10;
+  }
+
+  .grid1-item:hover .content7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #16181f;
+    border-radius: 10px;
+    gap: 3px;
+    position: relative;
+    top: -35px;
+    z-index: 10;
+  }
+
+  .gridhcont {
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+
+  .gridhcont4 {
+    position: relative;
+    width: 100%;
+    height: 70px;
+  }
+
+  .gridcont7wh {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .imageh {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .imageh4 {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .imageh6 {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .imageh7 {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    filter: brightness(80%);
+  }
+
+  .grid1logo {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+    width: 60%;
+  }
+
+  .gridhb {
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .gridhbw {
+    background-color: #e1e6f0;
+    color: black;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 8px;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  .gridhbb {
+    background-color: #252225;
+    padding: 2px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .gridhlist {
+    margin: 0px auto;
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    display: flex;
+    gap: 5px;
+    list-style: none;
+  }
+
+  .gridhp {
+    color: rgba(255, 255, 255, 0.466);
+    margin: 0px 5px;
+    margin-bottom: 5px;
+  }
+
+  .gridhp2 {
+    color: white;
+    margin: 0px 5px;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  .faq {
+    color: white;
+    position: relative;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    width: calc(100% - 10px);
+    max-height: 450px;
+    overflow: auto;
+    margin-bottom: 30px;
+  }
+
+  .faqbox svg {
+    filter: invert(1);
+  }
+
+  .faqbox {
+    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #181b23;
+    padding: 14px;
+    max-width: 60vw;
+    margin: 14px auto;
+    cursor: pointer;
+    position: relative;
+    transition: margin 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  .answer {
+    color: rgba(255, 255, 255, 0.658);
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 8px;
+    line-height: 15px;
+    margin-top: 5px;
+    z-index: 2;
+  }
+
+  .faqbox.open+.faqbox {
+    margin-top: 120px;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: white;
+    font-size: 8px;
+    max-width: 80vw;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #fixedContainer {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    opacity: 0.5;
+  }
+
+  #roundFrame {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+  }
+
+  #profileImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
